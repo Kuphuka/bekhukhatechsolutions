@@ -2,7 +2,8 @@ import { Globe, Wrench, Palette, Monitor, ArrowRight, Check } from "lucide-react
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const services = [
-  { icon: Globe, title: "Website Development", desc: "Professional business websites designed to help you grow online.", price: "R2,000", color: "from-primary to-accent", features: ["50GB Storage", "Free Business Emails"] },
+  { icon: Globe, title: "Website Development", desc: "Professional business websites designed to help you grow online with smooth animations and polished interaction.", price: "R2,000", color: "from-primary to-accent", features: ["50GB Storage", "Free Business Emails"] },
+  { icon: Monitor, title: "Mobile Apps", desc: "Android and iOS apps built for small businesses and entrepreneurs.", price: "R3,500", color: "from-accent to-primary", features: ["Android + iOS", "App store ready"] },
   { icon: Wrench, title: "Website Maintenance", desc: "Monthly updates, security, and support.", price: "R290 / month", color: "from-accent to-primary" },
   { icon: Palette, title: "Logo Design", desc: "Professional brand logos for businesses.", price: "R450", color: "from-primary to-accent" },
   { icon: Monitor, title: "Software Support", desc: "Help installing and fixing software issues.", price: null, color: "from-accent to-primary" },
@@ -12,13 +13,14 @@ const ServicesSection = () => {
   const { ref, visible } = useScrollReveal();
 
   return (
-    <section id="services" className="py-20 bg-section-alt">
-      <div ref={ref} className="container mx-auto px-4">
+    <section id="services" className="py-24 bg-section-alt">
+      <div ref={ref} className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`text-center mb-14 opacity-0 ${visible ? "animate-fade-up" : ""}`}>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">Our Services</h2>
-          <p className="text-muted-foreground max-w-lg mx-auto">Affordable tech solutions tailored to your needs.</p>
+          <p className="text-muted-foreground max-w-2xl mx-auto">Affordable web, mobile and animation solutions for modern businesses.</p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-screen-xl mx-auto">
           {services.map((s, i) => (
             <div
               key={s.title}

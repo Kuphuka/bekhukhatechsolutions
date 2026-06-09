@@ -3,7 +3,7 @@ import logoTagline from "@/assets/logo-tagline.jpeg";
 const HeroSection = () => (
   <section
     id="home"
-    className="relative min-h-[90vh] flex items-center justify-center pt-16"
+    className="relative min-h-[75vh] flex items-center justify-center py-20 sm:py-28"
   >
     {/* Background image with overlay */}
     <div className="absolute inset-0">
@@ -12,11 +12,11 @@ const HeroSection = () => (
         alt=""
         className="w-full h-full object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-[hsla(222,80%,14%,0.75)] via-[hsla(222,80%,14%,0.5)] to-[hsla(210,100%,52%,0.4)]" />
+      <div className="absolute inset-0 bg-hero-overlay" />
     </div>
 
-    <div className="relative z-10 text-center px-4 max-w-3xl mx-auto animate-fade-up">
-      <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
+    <div className="relative z-10 text-center px-4 sm:px-6 max-w-3xl sm:max-w-4xl mx-auto animate-fade-up">
+      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
         Innovate · Connect · Deliver
       </h1>
       <p className="text-lg md:text-xl text-white/90 mb-8 max-w-xl mx-auto drop-shadow">

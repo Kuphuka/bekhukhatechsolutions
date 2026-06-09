@@ -12,8 +12,8 @@ const TestimonialsSection = () => {
   const { ref, visible } = useScrollReveal();
 
   return (
-    <section id="testimonials" className="py-20 bg-secondary">
-      <div ref={ref} className="container mx-auto px-4">
+    <section id="testimonials" className="py-24 bg-secondary">
+      <div ref={ref} className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`text-center mb-14 opacity-0 ${visible ? "animate-fade-up" : ""}`}>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">What Our Clients Say</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">

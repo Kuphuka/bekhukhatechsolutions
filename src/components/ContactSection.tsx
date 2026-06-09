@@ -7,24 +7,24 @@ const ContactSection = () => {
   const { ref, visible } = useScrollReveal();
 
   return (
-    <section id="contact" className="py-20 bg-section-alt">
+    <section id="contact" className="py-24 bg-section-alt">
       <div
         ref={ref}
-        className={`container mx-auto px-4 text-center opacity-0 ${visible ? "animate-fade-up" : ""}`}
+        className={`container mx-auto px-4 sm:px-6 lg:px-8 text-center opacity-0 ${visible ? "animate-fade-up" : ""}`}
       >
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">Get In Touch</h2>
         <p className="text-muted-foreground mb-10 max-w-lg mx-auto">Ready to grow your business? Contact us today.</p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
-          <a href="tel:0799844222" className="inline-flex items-center gap-3 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity">
+          <a href="tel:0799844222" className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity">
             <Phone size={20} /> 079 984 4222
           </a>
           <a href="https://wa.me/27799844222" target="_blank" rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-6 py-3 rounded-lg bg-[#25D366] text-white font-semibold hover:opacity-90 transition-opacity">
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 py-3 rounded-lg bg-[#25D366] text-white font-semibold hover:opacity-90 transition-opacity">
             <MessageCircle size={20} /> WhatsApp Us
           </a>
           <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-6 py-3 rounded-lg bg-gradient-to-r from-[#f09433] via-[#e6683c] to-[#bc1888] text-white font-semibold hover:opacity-90 transition-opacity">
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 py-3 rounded-lg bg-gradient-to-r from-primary via-accent to-secondary text-white font-semibold hover:opacity-90 transition-opacity">
             <Instagram size={20} /> Instagram
           </a>
         </div>

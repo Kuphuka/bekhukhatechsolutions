@@ -16,10 +16,10 @@ const Navbar = () => {
 
   return (
     <nav className="bg-nav fixed top-0 w-full z-50 shadow-md">
-      <div className="container mx-auto flex items-center justify-between py-3 px-4">
-        <a href="#home" className="flex items-center gap-3">
-          <img src={logo} alt="Bekhukha Tech Solutions" className="h-10 w-10 rounded-full object-cover" />
-          <span className="text-lg font-bold font-[Space_Grotesk]">Bekhukha Tech Solutions</span>
+      <div className="container mx-auto flex items-center justify-between py-4 px-4 sm:py-3">
+        <a href="#home" className="flex items-center gap-4">
+          <img src={logo} alt="Bekhukha Tech Solutions" className="h-12 w-12 md:h-10 md:w-10 rounded-full object-cover" />
+          <span className="text-lg md:text-xl font-semibold">Bekhukha Tech Solutions</span>
         </a>
         <div className="hidden md:flex gap-6">
           {links.map((l) => (

@@ -39,11 +39,11 @@ const PortfolioSection = () => {
     <section
       id="portfolio"
       ref={ref}
-      className={`py-20 px-4 bg-background transition-all duration-700 ${
+      className={`py-24 px-4 sm:px-6 lg:px-8 section-splash bg-background transition-all duration-700 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
       }`}
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-screen-xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-3">
           Our Work
         </h2>
@@ -55,7 +55,7 @@ const PortfolioSection = () => {
           {projects.map((project, i) => (
             <div
               key={i}
-              className="group relative rounded-2xl overflow-hidden border border-border/60 bg-card shadow-sm hover:shadow-lg transition-all duration-300"
+              className="group relative rounded-[2rem] overflow-hidden border border-border/60 bg-card shadow-sm hover:-translate-y-1 hover:shadow-2xl transition-all duration-300"
               style={{ transitionDelay: `${i * 100}ms` }}
             >
               <div className="overflow-hidden">
