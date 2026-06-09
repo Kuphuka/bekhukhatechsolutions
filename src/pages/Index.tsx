@@ -9,6 +9,7 @@ import PortfolioSection from "@/components/PortfolioSection";
 import ContactSection from "@/components/ContactSection";
 import FAQSection from "@/components/FAQSection";
 import WhatsAppFab from "@/components/WhatsAppFab";
+import AssistantBot from "@/components/AssistantBot";
 import Footer from "@/components/Footer";
 
 const Index = () => (
@@ -25,6 +26,7 @@ const Index = () => (
     <ContactSection />
     <Footer />
     <WhatsAppFab />
+    <AssistantBot />
   </>
 );
 
