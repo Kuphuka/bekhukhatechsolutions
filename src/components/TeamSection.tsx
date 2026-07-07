@@ -3,7 +3,6 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 import teamPlaceholder from "@/assets/logo.jpeg";
 import emmanuelImage from "@/assets/team/EMMANUEL.jpeg";
 import freemanImage from "@/assets/team/freeman.jpeg";
-import prizeImage from "@/assets/team/prize.jpeg";
 
 const team = [
   {
@@ -21,7 +20,7 @@ const team = [
   {
     name: "Praise Nwandula",
     role: "COO",
-    image: prizeImage,
+    image: teamPlaceholder,
     bio: "Praise is the Chief Operating Officer at Bekhukha Tech Solutions, bringing disciplined execution and operational excellence to every project. She ensures the team delivers on time, maintains quality, and continuously improves client service across every engagement.",
   },
 ];

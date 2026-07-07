@@ -47,12 +47,16 @@
   * {
     @apply border-border;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     @apply bg-background text-foreground;
     font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    background-image: linear-gradient(135deg, rgba(248, 250, 252, 0.92), rgba(239, 246, 255, 0.86));
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -86,6 +90,9 @@
   .card-hover:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 60px -24px hsla(222, 80%, 22%, 0.25);
+  }
+  .text-shadow-soft {
+    text-shadow: 0 12px 40px rgba(2, 8, 23, 0.32);
   }
   .bg-section-alt {
     background-color: hsl(var(--section-alt));
